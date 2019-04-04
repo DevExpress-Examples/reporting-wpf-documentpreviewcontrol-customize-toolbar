@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* **[MainWindow.xaml](./CS/CustomizePreviewToolbar/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/CustomizePreviewToolbar/MainWindow.xaml.vb))**
+* **[MainWindow.xaml](./CS/CustomizePreviewToolbar/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomizePreviewToolbar/MainWindow.xaml))**
 * [MainWindow.xaml.cs](./CS/CustomizePreviewToolbar/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomizePreviewToolbar/MainWindow.xaml.vb))
 <!-- default file list end -->
 # DocumentPreviewControl - How to remove standard bar items and add custom ones to the toolbar
