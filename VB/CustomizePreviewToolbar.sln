@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomizePreviewToolbar", "CustomizePreviewToolbar\CustomizePreviewToolbar.vbproj", "{0EF0EDDC-1BD9-4456-8A78-77C89ACF0772}"
 EndProject
 Global
