@@ -1,7 +1,6 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Windows;
 using DevExpress.Xpf.Printing;
-// ...
 
 namespace CustomizePreviewToolbar {
     /// <summary>
@@ -13,7 +12,7 @@ namespace CustomizePreviewToolbar {
         public MainWindow() {
             InitializeComponent();
 
-            // Create a document to display.
+            // Creates a document to display.
             string[] data = CultureInfo.CurrentCulture.DateTimeFormat.DayNames;
 
             link = new SimpleLink {
@@ -26,11 +25,15 @@ namespace CustomizePreviewToolbar {
             link.CreateDocument();
         }
 
-        private void CreateDocument_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e) {
+        private void CreateDocument_ItemClick(object sender, 
+            DevExpress.Xpf.Bars.ItemClickEventArgs e) 
+        {
             link.CreateDocument();
         }
 
-        private void ClearPreview_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e) {
+        private void ClearPreview_ItemClick(object sender, 
+            DevExpress.Xpf.Bars.ItemClickEventArgs e) 
+        {
             link.PrintingSystem.ClearContent();
         }
     }

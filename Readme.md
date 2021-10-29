@@ -1,20 +1,34 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128598084/21.1.5%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T263038)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/CustomizePreviewToolbar/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CustomizePreviewToolbar/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/CustomizePreviewToolbar/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CustomizePreviewToolbar/MainWindow.xaml.vb))
 <!-- default file list end -->
-# DocumentPreviewControl - How to remove standard bar items and add custom ones to the toolbar
+
+# DocumentPreviewControl - How to Customize the Toolbar
 
 
-<p>This example demonstrates how to customize the <strong>DocumentViewerControl's </strong>toolbar (either <a href="https://documentation.devexpress.com/#WPF/CustomDocument6554">BarManager</a> or <a href="https://documentation.devexpress.com/#WPF/CustomDocument7954">RibbonControl</a>).</p>
-<p>In particular, it shows how to remove standard commands from a Ribbon toolbar and add custom ones, as well as customize command icons.</p>
+This example demonstrates how to customize the [DocumentViewerControl](https://docs.devexpress.com/WPF/9697/controls-and-libraries/printing-exporting/concepts/document-preview) toolbar.
+It shows how to remove standard commands from a Ribbon toolbar, and add custom commands.
 
-<br/>
+Resulting image → [Illustrate the result for a visual example]
+
+![Screenshot](Images/screenshot.png)
+
+The example implements a custom command provider ([DocumentCommandProvider](https://docs.devexpress.com/WPF/DevExpress.Xpf.Printing.DocumentCommandProvider) and uses [Bar Actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to modify the toolbar.
+
+
+## Documentation
+
+- [Customize the Document Preview Toolbar](https://docs.devexpress.com/XtraReports/9400/wpf-reporting/wpf-reporting-document-preview/api-and-customization/customize-the-document-preview-toolbar)
+- [Quick Guide to Print Preview Customization](https://docs.devexpress.com/XtraReports/119228/wpf-reporting/wpf-reporting-document-preview/api-and-customization/quick-guide-to-print-preview-customization)
+
+## More Examples
+
+- [How to Use ViewModel Data as Report Parameters in a WPF MVVM Application](https://github.com/DevExpress-Examples/reporting-wpf-mvvm-viewmodel-data-to-report)
+- [How to Use the DocumentPreviewControl in a WPF MVVM Application to Preview a Report](https://github.com/DevExpress-Examples/reporting-wpf-mvvm-show-report-document-preview)
+
+
+
 
 

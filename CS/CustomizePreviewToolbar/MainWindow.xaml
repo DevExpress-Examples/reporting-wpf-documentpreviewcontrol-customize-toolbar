@@ -21,25 +21,25 @@
 
                         <dxb:UpdateAction ElementName="{x:Static dxpbars:DefaultPreviewBarItemNames.Print}" 
                                           Property="{x:Static dxb:BarItem.LargeGlyphProperty}" 
-                                          Value="{dxp:PrintingImageSelector Source={dx:DXImage Image=Print_32x32.png}, 
-                                                    SvgSource='Images/BarItems/Print.svg'}"/>
+                                          Value="{dxp:PrintingResourceImage ResourceName='Images/BarItems/Print.svg'}"/>
                         
                         <dxb:RemoveAction ElementName="{x:Static dxpbars:DefaultPreviewBarItemNames.Export}"/>
+                        <dxb:RemoveAction ElementName="{x:Static dxpbars:DefaultPreviewBarItemNames.Send}"/>
                         <dxb:RemoveAction ElementName="{x:Static dxpbars:DefaultPreviewBarItemNames.FileGroup}"/>
 
                         <dxb:InsertAction>
                             <dxb:InsertAction.Element>
-                                <dxr:RibbonPageGroup Caption="Custom Commands" Name="CustomCommandsGroup"/>
+                                <dxr:RibbonPageGroup Caption="Custom Commands" Name="CustomCommandGroup"/>
                             </dxb:InsertAction.Element>                      
                         </dxb:InsertAction>
 
-                        <dxb:InsertAction ContainerName="CustomCommandsGroup">
+                        <dxb:InsertAction ContainerName="CustomCommandGroup">
                             <dxb:InsertAction.Element>
                                 <dxb:BarButtonItem Content="Create Document" ItemClick="CreateDocument_ItemClick"/>
                             </dxb:InsertAction.Element>
                         </dxb:InsertAction>
 
-                        <dxb:InsertAction ContainerName="CustomCommandsGroup">
+                        <dxb:InsertAction ContainerName="CustomCommandGroup">
                             <dxb:InsertAction.Element>
                                 <dxb:BarButtonItem Content="Clear Preview" ItemClick="ClearPreview_ItemClick" />                                
                             </dxb:InsertAction.Element>
@@ -48,10 +48,8 @@
                         <dxb:InsertAction ContainerName="{x:Static dxpbars:DefaultPreviewBarItemNames.ExportGroup}">
                             <dxb:InsertAction.Element>
                                 <dxb:BarButtonItem Content="{dxp:PrintingStringId StringId=ExportPdf}" 
-                                    LargeGlyph="{dxp:PrintingImageSelector Source={dx:DXImage Image=ExportToPDF_32x32.png}, 
-                                                    SvgSource='Images/BarItems/ExportToPDF.svg'}"
-                                    Glyph="{dxp:PrintingImageSelector Source={dx:DXImage Image=ExportToPDF_16x16.png}, 
-                                                    SvgSource='Images/BarItems/ExportToPDF.svg'}"
+                                    LargeGlyph="{dxp:PrintingResourceImage ResourceName='Images/BarItems/ExportPDF.svg'}"
+                                    Glyph="{dxp:PrintingResourceImage ResourceName='Images/BarItems/ExportPDF.svg'}"
                                     Hint="{dxp:PrintingStringId StringId=ExportPdf}" 
                                     Command="{Binding Path=(dxp:DocumentPreviewControl.ActualViewer).ExportCommand, 
                                         RelativeSource={RelativeSource Self}}" 

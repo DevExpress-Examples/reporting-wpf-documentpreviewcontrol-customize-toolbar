@@ -1,7 +1,6 @@
-﻿Imports System.Globalization
+Imports System.Globalization
 Imports System.Windows
 Imports DevExpress.Xpf.Printing
-' ...
 
 Namespace CustomizePreviewToolbar
 	''' <summary>
@@ -15,13 +14,10 @@ Namespace CustomizePreviewToolbar
 		Public Sub New()
 			InitializeComponent()
 
-			' Create a document to display.
+			' Creates a document to display.
 			Dim data() As String = CultureInfo.CurrentCulture.DateTimeFormat.DayNames
 
-			link = New SimpleLink With {
-				.DetailTemplate = DirectCast(Resources("dayNameTemplate"), DataTemplate),
-				.DetailCount = data.Length
-			}
+			link = New SimpleLink With {.DetailTemplate = DirectCast(Resources("dayNameTemplate"), DataTemplate), .DetailCount = data.Length}
 			AddHandler link.CreateDetail, Sub(s, e) e.Data = data(e.DetailIndex)
 
 			preview.DocumentSource = link
