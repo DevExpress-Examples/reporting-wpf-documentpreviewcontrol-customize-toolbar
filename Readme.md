@@ -13,7 +13,7 @@ It shows how to remove standard commands from a Ribbon toolbar, and add custom 
 
 ![Screenshot](Images/screenshot.png)
 
-The example implements a custom command provider ([DocumentCommandProvider](https://docs.devexpress.com/WPF/DevExpress.Xpf.Printing.DocumentCommandProvider) and uses [Bar Actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to modify the toolbar.
+The example implements a custom command provider ([DocumentCommandProvider](https://docs.devexpress.com/WPF/DevExpress.Xpf.Printing.DocumentCommandProvider)) and uses [Bar Actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to modify the toolbar.
 
 
 ## Documentation
