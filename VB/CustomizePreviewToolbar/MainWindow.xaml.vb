@@ -1,30 +1,25 @@
-﻿Imports System.Globalization
+Imports System.Globalization
 Imports System.Windows
 Imports DevExpress.Xpf.Printing
-' ...
 
+' ...
 Namespace CustomizePreviewToolbar
+
     ''' <summary>
     ''' Interaction logic for MainWindow.xaml
     ''' </summary>
-    Partial Public Class MainWindow
+    Public Partial Class MainWindow
         Inherits Window
 
         Private link As SimpleLink
 
         Public Sub New()
-            InitializeComponent()
-
+            Me.InitializeComponent()
             ' Create a document to display.
-            Dim data() As String = CultureInfo.CurrentCulture.DateTimeFormat.DayNames
-
-            link = New SimpleLink With { _
-                .DetailTemplate = DirectCast(Resources("dayNameTemplate"), DataTemplate), _
-                .DetailCount = data.Length _
-            }
+            Dim data As String() = CultureInfo.CurrentCulture.DateTimeFormat.DayNames
+            link = New SimpleLink With {.DetailTemplate = CType(Resources("dayNameTemplate"), DataTemplate), .DetailCount = data.Length}
             AddHandler link.CreateDetail, Sub(s, e) e.Data = data(e.DetailIndex)
-
-            preview.DocumentSource = link
+            Me.preview.DocumentSource = link
             link.CreateDocument()
         End Sub
 
