@@ -2,15 +2,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T263038)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
-<!-- default file list end -->
-
 # DocumentPreviewControl - How to Customize the Toolbar
-
 
 This example demonstrates how to customize the [DocumentViewerControl](https://docs.devexpress.com/WPF/9697/controls-and-libraries/printing-exporting/concepts/document-preview) toolbar.
 It shows how to remove standard commands from a Ribbon toolbar, and add custom commands.
@@ -19,6 +11,10 @@ It shows how to remove standard commands from a Ribbon toolbar, and add custom 
 
 The example implements a custom command provider ([DocumentCommandProvider](https://docs.devexpress.com/WPF/DevExpress.Xpf.Printing.DocumentCommandProvider) and uses [Bar Actions](https://docs.devexpress.com/WPF/7045/controls-and-libraries/ribbon-bars-and-menu/bars/bar-actions) to modify the toolbar.
 
+## Files to Review
+
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
 
 ## Documentation
 
