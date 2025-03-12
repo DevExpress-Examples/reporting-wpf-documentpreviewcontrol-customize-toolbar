@@ -5,13 +5,18 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>CustomizePreviewToolbar</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <Platforms>x86;AnyCPU</Platforms>
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
   <ItemGroup>
@@ -24,21 +29,21 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Images" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Office.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Pdf.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Export" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Docking" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Reporting" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Images" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Mvvm" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Office.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="24.2.5" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.5" />
   </ItemGroup>
 </Project>
